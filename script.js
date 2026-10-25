@@ -1,12 +1,14 @@
 console.log("Hello World!");
 // 1. Create an array called favoriteFoods with at least 6 foods you love.
 
+let favFoods = ["chocolate", "Doritos", "cheeseburger", "hummus", "pretzels", "peanut butter"]
 
 
 // 2. Loop through the list and print: "One of my favorite foods is ______."
 
-
-
+for (let i = 0; i < favFoods.length; i++) {
+  console.log("One of my favorite foods is " + favFoods[i] + ".");
+}
 
 
 // 3. Print out the rating for each food with a ranking like:
@@ -14,9 +16,18 @@ console.log("Hello World!");
 // "My #2 favorite food is Sushi"
 // ...etc.
 
+console.log("Jodi Ryter asks: does 'copy/paste for all items' mean a console.log statement for each food?");
+console.log("My #1 favorite food is " + favFoods[0]);
+console.log("My #1 favorite food is " + favFoods[1]);
+console.log("My #1 favorite food is " + favFoods[2]);
+console.log("My #1 favorite food is " + favFoods[3]);
+console.log("My #1 favorite food is " + favFoods[4]);
+console.log("My #1 favorite food is " + favFoods[5]);
 
-
-
+console.log("Jodi Ryter adds: an iterative loop is more efficient...");
+for (let i = 0; i < favFoods.length; i++) {
+  console.log("My #" + (i+1) + " favorite food is " + favFoods[i] + ".");
+}
 
 // 4a. Create a function printFoodRecommendation(foodName) that prints out the following for the foodName provided
     // "Have you ever tried ____?"
