@@ -1,7 +1,7 @@
 console.log("Hello World!");
 // 1. Create an array called favoriteFoods with at least 6 foods you love.
 
-let favFoods = ["chocolate", "Doritos", "cheeseburger", "hummus", "pretzels", "peanut butter"]
+let favFoods = ["chocolate", "Doritos", "cheeseburger", "hummus", "pretzels", "peanut butter"];
 
 
 // 2. Loop through the list and print: "One of my favorite foods is ______."
@@ -18,11 +18,11 @@ for (let i = 0; i < favFoods.length; i++) {
 
 console.log("Jodi Ryter asks: does 'copy/paste for all items' mean a console.log statement for each food?");
 console.log("My #1 favorite food is " + favFoods[0]);
-console.log("My #1 favorite food is " + favFoods[1]);
-console.log("My #1 favorite food is " + favFoods[2]);
-console.log("My #1 favorite food is " + favFoods[3]);
-console.log("My #1 favorite food is " + favFoods[4]);
-console.log("My #1 favorite food is " + favFoods[5]);
+console.log("My #2 favorite food is " + favFoods[1]);
+console.log("My #3 favorite food is " + favFoods[2]);
+console.log("My #4 favorite food is " + favFoods[3]);
+console.log("My #5 favorite food is " + favFoods[4]);
+console.log("My #6 favorite food is " + favFoods[5]);
 
 console.log("Jodi Ryter adds: an iterative loop is more efficient...");
 for (let i = 0; i < favFoods.length; i++) {
@@ -58,8 +58,8 @@ let friendFavorites = [
 for (let i = 0; i < friendFavorites.length; i++) {
   if (friendFavorites[i].toLowerCase().includes("a") === true) {
     console.log(friendFavorites[i]);
-  };
-};
+  }
+}
 
 // 6. Store the result in an array called foodsWithA. Print out the array.
 
@@ -68,8 +68,8 @@ let foodsWithA = [];
 for (let i = 0; i < friendFavorites.length; i++) {
   if (friendFavorites[i].toLowerCase().includes("a") === true) {
     foodsWithA.push(friendFavorites[i]);
-  };
-};
+  }
+}
 
 console.log(foodsWithA);
 
@@ -80,8 +80,8 @@ let longFoodNames = [];
 for (let i = 0; i < friendFavorites.length; i++) {
   if (friendFavorites[i].length > 6) {
     longFoodNames.push(friendFavorites[i]);
-  };
-};
+  }
+}
 
 // 8. Create another array shortFoodNames for foods 6 characters or shorter.
 
@@ -90,8 +90,8 @@ let shortFoodNames = [];
 for (let i = 0; i < friendFavorites.length; i++) {
   if (friendFavorites[i].length <= 6) {
     shortFoodNames.push(friendFavorites[i]);
-  };
-};
+  }
+}
 
 // 9. Print both arrays and compare:
 // "There are more long-named foods." OR "There are more short-named foods."
@@ -102,7 +102,7 @@ console.log(shortFoodNames);
 if (longFoodNames.length > shortFoodNames.length) {
   console.log("There are more long-named foods.");
 } else {
-  console.log("There are more short-names foods.");
+  console.log("There are more short-named foods.");
 }
 
 // 10. STRETCH: Find the longest food name and print:
